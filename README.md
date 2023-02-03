@@ -8,6 +8,7 @@ This is my custom firmware for the GMMK v2 p65 ISO keyboard. It is based on the 
 
 * VIA support
 * MacOS keymaps
+* Link Time Optimization (LTO) enabled for a reduced firmware size
 * <kbd>Fn</kbd> + <kbd>+</kbd>/<kbd>-</kbd> to change volume
 * <kbd>Fn</kbd> + <kbd>1</kbd>/<kbd>2</kbd> to change brightness
 * <kbd>Fn</kbd> + <kbd>,</kbd>/<kbd>.</kbd>/<kbd>/</kbd> to control playback
