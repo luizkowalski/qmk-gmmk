@@ -22,6 +22,8 @@ This is my custom firmware for the GMMK v2 p65 ISO keyboard. It is based on the 
 ```sh
 git clone https://github.com/qmk/qmk_firmware
 cd qmk_firmware
-git clone https://github.com/luizkowalski/qmk-gmmk --depth 1 keyboards/gmmk/gmmk2/p65/iso/keymaps/
+# Install dependencies with `make git-submodule`
+curl -L https://github.com/luizkowalski/qmk-gmmk/archive/refs/heads/main.zip -o keyboards/gmmk/gmmk2/p65/iso/keymaps/kowalski.zip
+tar -xvf keyboards/gmmk/gmmk2/p65/iso/keymaps/kowalski.zip -C keyboards/gmmk/gmmk2/p65/iso/keymaps/ --strip-components=1
 qmk flash -kb gmmk/gmmk2/p65/iso -km kowalski
 ```
