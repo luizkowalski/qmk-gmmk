@@ -56,8 +56,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #define CAPS_POSITION 30
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
-    if (IS_HOST_LED_ON(USB_LED_CAPS_LOCK)) {
-        rgb_matrix_set_color(CAPS_POSITION, HSV_ORANGE);
+    if (host_keyboard_led_state().caps_lock)  {
+        rgb_matrix_set_color(caps_position, hsv_orange);
     }
     return true;
 }
@@ -74,3 +74,4 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     return true;
 }
+
